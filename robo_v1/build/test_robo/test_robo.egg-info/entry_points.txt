@@ -1,4 +1,0 @@
-[console_scripts]
-controller = test_robo.ctrlr:main
-driver = test_robo.driver:main
-
