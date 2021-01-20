@@ -1,0 +1,10 @@
+/home/ros/Desktop/robo_v1/install/test_robo/lib/python3.8/site-packages/test_robo/driver.py:12: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if msg is "W":
+/home/ros/Desktop/robo_v1/install/test_robo/lib/python3.8/site-packages/test_robo/driver.py:14: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  elif msg is "S":
+/home/ros/Desktop/robo_v1/install/test_robo/lib/python3.8/site-packages/test_robo/driver.py:16: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  elif msg is "A":
+/home/ros/Desktop/robo_v1/install/test_robo/lib/python3.8/site-packages/test_robo/driver.py:18: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  elif msg is "D":
+/home/ros/Desktop/robo_v1/install/test_robo/lib/python3.8/site-packages/test_robo/driver.py:20: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  elif msg is "Q":
