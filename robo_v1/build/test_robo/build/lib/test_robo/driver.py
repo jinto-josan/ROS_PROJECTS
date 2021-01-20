@@ -13,13 +13,13 @@ class robo(Node):
         val=msg.data
         cmd=Twist()
         if val == "W":
-            cmd.angular.z=-1.0
+            cmd.angular.z=-1.5
         elif val == "S":
-            cmd.angular.z=1.0
+            cmd.angular.z=1.5
         elif val == "A":
-            cmd.linear.x=-0.2
+            cmd.linear.x=-2.0
         elif val == "D":
-            cmd.linear.x=0.2
+            cmd.linear.x=2.0
         elif val == "Q":
             cmd.linear.x=0.0
         self.pub.publish(cmd)

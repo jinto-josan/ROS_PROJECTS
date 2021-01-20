@@ -10,6 +10,10 @@
     <include>
       <pose>0 0 0.5 0 0 0</pose>
       <uri>model://test_robo</uri>
+    </include>
+    <include>
+      <pose>0 0 0 0 0 0</pose>
+      <uri>model://test_room</uri>
     </include>      
 </world>
 </sdf>
