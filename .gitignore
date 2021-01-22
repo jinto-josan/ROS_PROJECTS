@@ -1,6 +1,6 @@
 **/__pycache_
 .gitignore
-**/logs
+**/log
 **/install
 **/build
 
