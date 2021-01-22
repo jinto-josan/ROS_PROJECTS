@@ -1,0 +1,25 @@
+[0.232s] Invoking command in '/home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/src/test_robo': PYTHONPATH=/home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/install/test_robo/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/test_robo build --build-base /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/build/test_robo/build install --prefix /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/install/test_robo --record /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/build/test_robo/install.log --single-version-externally-managed
+[0.427s] running egg_info
+[0.428s] writing ../../build/test_robo/test_robo.egg-info/PKG-INFO
+[0.428s] writing dependency_links to ../../build/test_robo/test_robo.egg-info/dependency_links.txt
+[0.428s] writing entry points to ../../build/test_robo/test_robo.egg-info/entry_points.txt
+[0.428s] writing requirements to ../../build/test_robo/test_robo.egg-info/requires.txt
+[0.428s] writing top-level names to ../../build/test_robo/test_robo.egg-info/top_level.txt
+[0.463s] reading manifest file '../../build/test_robo/test_robo.egg-info/SOURCES.txt'
+[0.464s] writing manifest file '../../build/test_robo/test_robo.egg-info/SOURCES.txt'
+[0.464s] running build
+[0.464s] running build_py
+[0.464s] copying test_robo/ctrlr.py -> /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/build/test_robo/build/lib/test_robo
+[0.465s] running install
+[0.466s] running install_lib
+[0.467s] copying /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/build/test_robo/build/lib/test_robo/ctrlr.py -> /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/install/test_robo/lib/python3.8/site-packages/test_robo
+[0.467s] byte-compiling /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/install/test_robo/lib/python3.8/site-packages/test_robo/ctrlr.py to ctrlr.cpython-38.pyc
+[0.469s] running install_data
+[0.469s] running install_egg_info
+[0.471s] removing '/home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/install/test_robo/lib/python3.8/site-packages/test_robo-0.0.0-py3.8.egg-info' (and everything under it)
+[0.471s] Copying ../../build/test_robo/test_robo.egg-info to /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/install/test_robo/lib/python3.8/site-packages/test_robo-0.0.0-py3.8.egg-info
+[0.472s] running install_scripts
+[0.490s] Installing controller script to /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/install/test_robo/lib/test_robo
+[0.490s] Installing driver script to /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/install/test_robo/lib/test_robo
+[0.491s] writing list of installed files to '/home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/build/test_robo/install.log'
+[0.516s] Invoked command in '/home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/src/test_robo' returned '0': PYTHONPATH=/home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/install/test_robo/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/test_robo build --build-base /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/build/test_robo/build install --prefix /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/install/test_robo --record /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/build/test_robo/install.log --single-version-externally-managed

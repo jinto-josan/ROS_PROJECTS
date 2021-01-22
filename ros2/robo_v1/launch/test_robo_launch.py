@@ -21,8 +21,14 @@ def generate_launch_description():
         )
     )
 
-    # Follow node
-    robo = Node(
+    robo_ctrlr = Node(
+        package='test_robo',
+        executable='controller',
+        output='screen',
+        prefix='gnome-terminal --'
+    )
+
+    robo_driver = Node(
         package='test_robo',
         executable='driver',
         output='screen',
@@ -38,5 +44,6 @@ def generate_launch_description():
           default_value=[os.path.join(os.getcwd(),'prop','worlds', 'my_world.world')],
           description='SDF world file'),
         gazebo,
-        robo
+        robo_driver,
+        robo_ctrlr
     ])

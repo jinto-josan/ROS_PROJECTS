@@ -10,7 +10,7 @@ def main():
     print("W--UP\nA--LEFT\nD--RIGHT\nS--DOWN\nQ--STOP") 
     ip=input()
     msg=String()
-    while ip is not 'Z':
+    while ip != 'Z':
         if(ip=="W" or ip=="S" or ip=="A" or ip=="D" or ip=="Q"):
             msg.data=ip
             pub.publish(msg)
