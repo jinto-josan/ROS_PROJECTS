@@ -1,0 +1,43 @@
+[0.232s] Invoking command in '/home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/src/test_robo': PYTHONPATH=/home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/install/test_robo/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/test_robo build --build-base /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/build/test_robo/build install --prefix /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/install/test_robo --record /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/build/test_robo/install.log --single-version-externally-managed
+[0.426s] running egg_info
+[0.427s] creating ../../build/test_robo/test_robo.egg-info
+[0.427s] writing ../../build/test_robo/test_robo.egg-info/PKG-INFO
+[0.427s] writing dependency_links to ../../build/test_robo/test_robo.egg-info/dependency_links.txt
+[0.428s] writing entry points to ../../build/test_robo/test_robo.egg-info/entry_points.txt
+[0.428s] writing requirements to ../../build/test_robo/test_robo.egg-info/requires.txt
+[0.428s] writing top-level names to ../../build/test_robo/test_robo.egg-info/top_level.txt
+[0.430s] writing manifest file '../../build/test_robo/test_robo.egg-info/SOURCES.txt'
+[0.467s] reading manifest file '../../build/test_robo/test_robo.egg-info/SOURCES.txt'
+[0.468s] writing manifest file '../../build/test_robo/test_robo.egg-info/SOURCES.txt'
+[0.468s] running build
+[0.468s] running build_py
+[0.468s] creating /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/build/test_robo/build
+[0.468s] creating /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/build/test_robo/build/lib
+[0.468s] creating /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/build/test_robo/build/lib/test_robo
+[0.468s] copying test_robo/ctrlr.py -> /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/build/test_robo/build/lib/test_robo
+[0.469s] copying test_robo/__init__.py -> /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/build/test_robo/build/lib/test_robo
+[0.469s] copying test_robo/driver.py -> /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/build/test_robo/build/lib/test_robo
+[0.469s] running install
+[0.470s] running install_lib
+[0.471s] creating /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/install/test_robo/lib/python3.8/site-packages/test_robo
+[0.471s] copying /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/build/test_robo/build/lib/test_robo/ctrlr.py -> /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/install/test_robo/lib/python3.8/site-packages/test_robo
+[0.472s] copying /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/build/test_robo/build/lib/test_robo/__init__.py -> /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/install/test_robo/lib/python3.8/site-packages/test_robo
+[0.472s] copying /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/build/test_robo/build/lib/test_robo/driver.py -> /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/install/test_robo/lib/python3.8/site-packages/test_robo
+[0.472s] byte-compiling /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/install/test_robo/lib/python3.8/site-packages/test_robo/ctrlr.py to ctrlr.cpython-38.pyc
+[0.473s] /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/install/test_robo/lib/python3.8/site-packages/test_robo/ctrlr.py:13: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+[0.474s]   while ip is not 'Z':
+[0.474s] byte-compiling /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/install/test_robo/lib/python3.8/site-packages/test_robo/__init__.py to __init__.cpython-38.pyc
+[0.474s] byte-compiling /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/install/test_robo/lib/python3.8/site-packages/test_robo/driver.py to driver.cpython-38.pyc
+[0.474s] running install_data
+[0.475s] creating /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/install/test_robo/share/ament_index
+[0.476s] creating /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/install/test_robo/share/ament_index/resource_index
+[0.476s] creating /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/install/test_robo/share/ament_index/resource_index/packages
+[0.476s] copying resource/test_robo -> /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/install/test_robo/share/ament_index/resource_index/packages
+[0.476s] copying package.xml -> /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/install/test_robo/share/test_robo
+[0.476s] running install_egg_info
+[0.478s] Copying ../../build/test_robo/test_robo.egg-info to /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/install/test_robo/lib/python3.8/site-packages/test_robo-0.0.0-py3.8.egg-info
+[0.479s] running install_scripts
+[0.499s] Installing controller script to /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/install/test_robo/lib/test_robo
+[0.499s] Installing driver script to /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/install/test_robo/lib/test_robo
+[0.499s] writing list of installed files to '/home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/build/test_robo/install.log'
+[0.523s] Invoked command in '/home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/src/test_robo' returned '0': PYTHONPATH=/home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/install/test_robo/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/test_robo build --build-base /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/build/test_robo/build install --prefix /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/install/test_robo --record /home/ros/Desktop/ROS_PROJECTS/ros2/robo_v1/build/test_robo/install.log --single-version-externally-managed
