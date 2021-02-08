@@ -3,5 +3,7 @@
 **/log
 **/install
 **/build
-
+**/devel
+*.log
+*.catkin_workspace
 

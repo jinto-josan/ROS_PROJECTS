@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="my_robot">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.106265112284959 0.00210013490740678 -0.0142361101145176"
+        rpy="0 0 0" />
+      <mass
+        value="144.435621199277" />
+      <inertia
+        ixx="2.66112422099869"
+        ixy="4.34783624106359E-05"
+        ixz="1.41233720620825"
+        iyy="37.2151205786951"
+        iyz="1.50740696379485E-05"
+        izz="38.2736286161732" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="front_left_wheel">
+    <inertial>
+      <origin
+        xyz="-1.3878E-16 0.020554 -2.1858E-16"
+        rpy="0 0 0" />
+      <mass
+        value="10.426" />
+      <inertia
+        ixx="0.064119"
+        ixy="-3.7701E-19"
+        ixz="2.0432E-17"
+        iyy="0.11102"
+        iyz="-5.225E-16"
+        izz="0.064119" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/front_left_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/front_left_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_left_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0.2176 0.34 -0.031041"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_left_wheel" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="back_left_wheel">
+    <inertial>
+      <origin
+        xyz="-2.2204E-16 0.020554 -3.2266E-16"
+        rpy="0 0 0" />
+      <mass
+        value="10.426" />
+      <inertia
+        ixx="0.064119"
+        ixy="3.8659E-18"
+        ixz="-7.1542E-17"
+        iyy="0.11102"
+        iyz="-5.3112E-16"
+        izz="0.064119" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/back_left_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/back_left_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="back_left_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.82 0.34 -0.031041"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="back_left_wheel" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="front_right_wheel">
+    <inertial>
+      <origin
+        xyz="-1.1102E-16 -0.020554 -7.2858E-17"
+        rpy="0 0 0" />
+      <mass
+        value="10.426" />
+      <inertia
+        ixx="0.064119"
+        ixy="8.339E-18"
+        ixz="-6.9613E-17"
+        iyy="0.11102"
+        iyz="-5.6072E-19"
+        izz="0.064119" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/front_right_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/front_right_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_right_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0.2176 -0.3358 -0.031041"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_right_wheel" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="back_right_wheel">
+    <inertial>
+      <origin
+        xyz="-1.1102E-16 -0.020554 -9.3675E-17"
+        rpy="0 0 0" />
+      <mass
+        value="10.426" />
+      <inertia
+        ixx="0.064119"
+        ixy="9.9658E-18"
+        ixz="-7.0799E-17"
+        iyy="0.11102"
+        iyz="1.7217E-18"
+        izz="0.064119" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/back_right_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/back_right_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="back_right_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.82 -0.3358 -0.031041"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="back_right_wheel" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="lidar_link">
+    <inertial>
+      <origin
+        xyz="-0.00027715 -3.9031E-18 0.005"
+        rpy="0 0 0" />
+      <mass
+        value="0.016141" />
+      <inertia
+        ixx="4.2235E-06"
+        ixy="-1.9485E-22"
+        ixz="3.4687E-23"
+        iyy="7.0432E-07"
+        iyz="2.1281E-23"
+        izz="4.6511E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/lidar_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/lidar_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lidar_link_joint"
+    type="fixed">
+    <origin
+      xyz="0.15965 0.0021 0.1103"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="lidar_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+<gazebo reference="lidar_link_joint"><preserveFixedJoint>true</preserveFixedJoint></gazebo>
+<gazebo reference="lidar_link">
+	<sensor name="ray_sensor" type="ray">
+		<parent link="lidar_link"/>
+		<visualize>true</visualize>
+		<ray>
+			<scan>
+				<horizontal>
+					<samples>30</samples>
+					<resolution>1.0</resolution>
+					<min_angle>-0.5</min_angle>
+					<max_angle>0.5</max_angle>
+				</horizontal>
+			</scan>
+			<range>
+				<min>0.81</min>
+				<max>30</max>
+			</range>
+		</ray>
+		<plugin name="lidar_controller" filename="libgazebo_ros_laser.so">
+			<alwaysOn>true</alwaysOn>
+			<updateRate>30</updateRate>
+			<topicName>base_scan</topicName>
+		<frameName>lidar_link</frameName>
+		</plugin>
+		<always_on>true</always_on>
+		<update_rate>1.0</update_rate>
+
+	</sensor>
+</gazebo>
+<link
+    name="camera_link">
+    <inertial>
+      <origin
+        xyz="-0.00027715 -4.3368E-18 0.005"
+        rpy="0 0 0" />
+      <mass
+        value="0.016141" />
+      <inertia
+        ixx="4.2235E-06"
+        ixy="-1.9711E-22"
+        ixz="-3.677E-23"
+        iyy="7.0432E-07"
+        iyz="-1.4426E-22"
+        izz="4.6511E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/camera_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot/meshes/camera_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="camera_link_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0.01"
+      rpy="0 0 0" />
+    <parent
+      link="lidar_link" />
+    <child
+      link="camera_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+<gazebo reference="camera_link_joint"><preserveFixedJoint>true</preserveFixedJoint></gazebo>
+<gazebo reference="camera_link">
+      <sensor type="camera" name="camera_sensor">
+        <parent link="camera_link"/>
+	<update_rate>30.0</update_rate>
+	<visualize>true</visualize>
+        <camera>
+          <horizontal_fov>1.3962634</horizontal_fov>
+          <image>
+            <format>R8G8B8</format>
+            <width>800</width>
+            <height>800</height>
+          </image>
+          <clip>
+            <near>0.81</near>
+            <far>100</far>
+          </clip>
+        </camera>
+
+        <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+          <cameraName>front_camera</cameraName>
+          <alwaysOn>true</alwaysOn>
+          <updateRate>0.0</updateRate>
+          <imageTopicName>image_raw</imageTopicName>
+          <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+          <frameName>camera_link</frameName>
+        </plugin>
+      </sensor>
+    </gazebo> 
+    
+    
+    <gazebo>
+  <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
+
+    <updateRate>30</updateRate>
+    <leftJoint>front_left_wheel_joint</leftJoint>
+    <rightJoint>front_right_wheel_joint</rightJoint>
+    <wheelSeparation>0.72</wheelSeparation>
+    <wheelDiameter>0.28</wheelDiameter>
+    <wheelAcceleration>1.0</wheelAcceleration>
+    <wheelTorque>20</wheelTorque>
+    <commandTopic>cmd_vel</commandTopic>
+    <odometryTopic>odom</odometryTopic>
+    <odometryFrame>odom</odometryFrame>
+    <robotBaseFrame>base_link</robotBaseFrame>
+    <odometrySource>1</odometrySource>
+    <!-- Set to true to swap right and left wheels, defaults to true -->
+    <legacyMode>false</legacyMode>
+  </plugin>
+</gazebo>
+</robot>

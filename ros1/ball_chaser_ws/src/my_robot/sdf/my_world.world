@@ -1,0 +1,17 @@
+<sdf version='1.7'>
+   <world name="my_world">
+   <include>
+      <pose>0 2 0.5 0 0 0</pose>
+      <uri>model://ball</uri>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://room</uri>
+</include>
+       </world>
+</sdf>
