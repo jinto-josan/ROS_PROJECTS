@@ -1,13 +1,14 @@
-## **White ball chaser**
+## **White ball chaser :-)**
 ---
 ### **Summary**
-> The project is to create a differential drive bot which can identify a white ball and move towards it.
-> The workspace contains two packages
-	1. my_robot : Contains a differential drive bot with lidar and rgb camera attached.
+> The project is to create a differential drive bot which can identify a white ball and move towards it.\
+> The workspace contains two packages :- \
+	1. my_robot : Contains a differential drive bot with lidar and rgb camera attached.\
 	2. ball_chaser : Holds the scripts for chasing the white ball
 ---
 ### **Folder Contents**
 1. my_robot
+
 | Folder      | Contents                                                |
 | ----------- | ------------------------------------------------------- |
 |   launch    | world.launch and utility.launch(for movement testing)   |
@@ -17,6 +18,7 @@
 |   meshes    | stl files for the robo material                         |
 
 2. ball_chaser
+
 | Folder      | Contents                                                |
 | ----------- | ------------------------------------------------------- |
 |   launch    | ball_chaser.launch (to launch chasing algo)             |
