@@ -1,14 +1,16 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.0.2)
 
 project(my_robot)
 
-find_package(catkin REQUIRED)
+find_package(catkin REQUIRED COMPONENTS rospy std_msgs)
 
 catkin_package()
+include_directories(
+	${catkin_INCLUDE_DIRS}
+	)
+catkin_install_python(PROGRAMS
+   scripts/driver.py scripts/ctrlr.py
+   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+ )
 
-find_package(roslaunch)
 
-foreach(dir config launch meshes urdf)
-	install(DIRECTORY ${dir}/
-		DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/${dir})
-endforeach(dir)

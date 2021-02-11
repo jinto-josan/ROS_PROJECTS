@@ -12,6 +12,8 @@ for my_robot robot</p>
   <buildtool_depend>catkin</buildtool_depend>
   <depend>roslaunch</depend>
   <depend>robot_state_publisher</depend>
+  <depend>std_msgs</depend>
+  <depend>rospy</depend>
   <depend>rviz</depend>
   <depend>joint_state_publisher_gui</depend>
   <depend>gazebo</depend>

@@ -1,0 +1,4 @@
+<launch>
+<node pkg="ball_chaser" type="process_image.py" name="detect_ball" output="screen" ns="my_robot"/>
+<node pkg="ball_chaser" type="drive_bot.py" name="command_robot" output="screen" ns="my_robot"/>
+</launch>
