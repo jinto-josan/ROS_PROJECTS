@@ -1,4 +1,4 @@
-## **White ball chaser :-)**
+## **White ball chaser**
 ---
 ### **Summary**
 > The project is to create a differential drive bot which can identify a white ball and move towards it.\
@@ -7,7 +7,7 @@
 	2. ball_chaser : Holds the scripts for chasing the white ball
 ---
 ### **Folder Contents**
-1. my_robot
+1. **my_robot**
 
 | Folder      | Contents                                                |
 | ----------- | ------------------------------------------------------- |
@@ -17,7 +17,7 @@
 |   urdf      | my_robot.urdf                                           |
 |   meshes    | stl files for the robo material                         |
 
-2. ball_chaser
+2. **ball_chaser**
 
 | Folder      | Contents                                                |
 | ----------- | ------------------------------------------------------- |
