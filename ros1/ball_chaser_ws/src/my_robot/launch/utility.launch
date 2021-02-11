@@ -9,18 +9,18 @@
     pkg="tf"
     type="static_transform_publisher"
     args="0 0 0 0 0 0 base_link base_footprint 40" />
-  <node 
-    name="spawn_model"
-    pkg="gazebo_ros"
-    type="spawn_model"
-    args="-file $(find my_robot)/sdf/models/my_robot/model.sdf -sdf -model my_robot"
-    output="screen" ns="my_robot" />
   <!--node 
     name="spawn_model"
     pkg="gazebo_ros"
     type="spawn_model"
-    args="-file $(find my_robot)/urdf/my_robot1.urdf -urdf -model my_robot"
+    args="-file $(find my_robot)/sdf/models/my_robot/model.sdf -sdf -model my_robot"
     output="screen" ns="my_robot" /-->
+  <node 
+    name="spawn_model"
+    pkg="gazebo_ros"
+    type="spawn_model"
+    args="-file $(find my_robot)/urdf/my_robot.urdf -urdf -model my_robot"
+    output="screen" ns="my_robot" />
 
  <node
 	name="Control"

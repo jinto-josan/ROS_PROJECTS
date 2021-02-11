@@ -8,6 +8,10 @@ imgWidth=640
 pub=rospy.Publisher('cmd_vel',Twist,queue_size=1)
 cmd=Twist()
 roll=pitch=yaw=0.0
+
+#using propotional controller to control the speed of rotation
+#feedback taken using odom
+#error of 0.03 rad is choosen which is approx 14 frames
 kp=0.5
 def get_angle(msg):
     global roll,pitch,yaw
@@ -17,14 +21,20 @@ def get_angle(msg):
 def srv_callback(req):
     reqdAngle=yaw+req.angle
     #+ z left rotate and -z right rotate
-    cmd.linear.x=0
+    cmd.linear.x=0.0
+    cmd.angular.z=0.0
+    pub.publish(cmd)
     r=rospy.Rate(10)
-    while abs(reqdAngle-yaw)>0.005 and req.angle!=4:
+    #print(req.angle)
+    while abs(reqdAngle-yaw)>0.03 and req.angle!=4.0:
         cmd.angular.z=kp*(reqdAngle-yaw)
         pub.publish(cmd)
         #print("speed= {}, reqdAngle  {}, yaw  {}",cmd.angular.z,reqdAngle,yaw)
         r.sleep()
-    cmd.angular.z=0
+    
+    cmd.angular.z=0.0
+   # cmd.linear.x=0.0
+   # pub.publish(cmd)
     if req.angle == 4:
         cmd.linear.x=0.0
     else:

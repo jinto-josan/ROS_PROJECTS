@@ -53,8 +53,8 @@ def callback(img):
         circles=np.round(circles[0,:]).astype("int")
         for (x,y,r) in circles:
             cv2.circle(img,(x,y),r,(0,255,0),4)
-            if abs(prev_x-x)>30 and abs(middle-x) >=40:
-                print("px:{} x: {} px:{}  mx: {}  ",prev_x,x,abs(prev_x-x),abs(middle-x))
+            if abs(prev_x-x)>=28 and abs(middle-x) >=14:
+           #     print("px:{} x: {} px:{}  mx: {}  ",prev_x,x,abs(prev_x-x),abs(middle-x))
                 prev_x=x
                 movingFlag=True
                 #left '+' angle and right '-' angle as per odom frame
@@ -62,9 +62,9 @@ def callback(img):
                 call_srvc(relativeAngle)
     elif movingFlag:
         #no ball stop
-        call_srvc(4)
+        call_srvc(4.0)
         movingFlag=False
-        print("stopped")
+        #print("stopped")
 
     cv2.imshow("Image_Window",img)
     #3 ms wait
