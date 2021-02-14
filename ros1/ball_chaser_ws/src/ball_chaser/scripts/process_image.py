@@ -14,6 +14,7 @@ angleConstant=1.3962634/640
 prev_x=0
 cmd=Twist()
 movingFlag=False
+count=0
 
 def call_srvc(angle):
     global sub
@@ -30,7 +31,7 @@ def call_srvc(angle):
 
 
 def callback(img):
-    global bridge,prev_x,angleConstant,imageWidth,movingFlag
+    global bridge,prev_x,angleConstant,imageWidth,movingFlag,count
     try:
         img=bridge.imgmsg_to_cv2(img,"bgr8")
     except CvBridgeError as e:
@@ -50,6 +51,7 @@ def callback(img):
     gray=cv2.cvtColor(res,cv2.COLOR_BGR2GRAY)
     circles=cv2.HoughCircles(gray,cv2.HOUGH_GRADIENT,1.20,100,param1=50,param2=30,minRadius=0,maxRadius=0)
     if circles is not None:
+        count=0
         circles=np.round(circles[0,:]).astype("int")
         for (x,y,r) in circles:
             cv2.circle(img,(x,y),r,(0,255,0),4)
@@ -60,8 +62,11 @@ def callback(img):
                 #left '+' angle and right '-' angle as per odom frame
                 relativeAngle=(middle - x)*angleConstant
                 call_srvc(relativeAngle)
+            else:
+                call_srvc(0) #move linear
     elif movingFlag:
         #no ball stop
+        #print("No ball")
         call_srvc(4.0)
         movingFlag=False
         #print("stopped")
